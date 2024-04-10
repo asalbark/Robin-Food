@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("http://localhost/Project/images/tex1.png");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh; /* Use min-height instead of height for better responsiveness */
+    text-align: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between; /* Align items evenly */
+    align-items: center;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+.nav-menu ul li:last-child {
+    margin-right: 20px; /* Add margin to the last li for spacing */
+}
+
+.nav-menu ul li .link,
+.language-toggle-btn {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3c3939;
+    padding-bottom: 15px;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+.language-toggle-btn {
+    padding: 10px 20px; /* Adjust button padding */
+    font-size: 16px; /* Adjust font size */
+    background-color: #f0839d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.language-toggle-btn:hover {
+    background-color: #dd5d7b;
+    transform: scale(1.05);
+}
+
+.nav-menu ul li .link:hover,
+.nav-menu ul li .active,
+.language-toggle-btn:hover {
+    border-bottom: 2px solid #3c3939;
+}
+
+.header h2 {
+    font-size: 1.4rem;
+    text-align: center;
+}
+button {
+    padding: 15px 30px;
+    font-size: 12px;
+    background-color: #f0839d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}

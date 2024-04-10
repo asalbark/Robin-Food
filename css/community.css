@@ -1,0 +1,169 @@
+.nav {
+    display: flex;
+    justify-content: space-between; /* Align items at opposite ends */
+    align-items: center; /* Center items vertically */
+    position: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: transparent;
+    padding: 5px 15px; /* Reduced top and bottom padding */
+    box-sizing: border-box;
+}
+
+.wrapper {
+    padding-top: 10px;
+}
+
+/* Your existing CSS continues below */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("http://localhost/Project/images/tex1.png");
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: right;
+    width: 100%;
+    padding: 0; /* Adjust padding */
+    box-sizing: border-box;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4px; /* Increased padding-top */
+}
+
+.nav .nav-logo.img img {
+    width: 90px;
+    height: auto;
+    margin-right: 10px; /* Add margin to separate logo from menu */
+}
+
+.nav .nav-menu ul {
+    display: flex;
+    margin: 0; /* Remove default margin */
+}
+
+.nav .nav-menu ul li {
+    list-style-type: none;
+    margin: 0 10px; /* Adjust margin between menu items */
+}
+
+.nav .nav-menu ul li .link,
+button.link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #3c3939;
+    padding-bottom: 15px;
+    background-color: transparent; /* Set background color */
+    border-bottom: none; /* Remove border bottom */
+}
+
+
+.nav .nav-menu ul li .link:hover,
+.nav .nav-menu ul li .active,
+button.link:hover {
+    border-bottom: 2px solid #3c3939; /* Change border color on hover */
+}
+
+.nav .nav-button .btn {
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.nav .nav-button .btn:hover {
+    background: #f9adbf;
+}
+
+.nav #registerBtn {
+    margin-left: 15px;
+}
+
+.nav .btn.white-btn {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.nav .btn.white-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+.nav .nav-logo img {
+    color: white;
+    width: 150px;
+    height: 150px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    float: right;
+    padding: 5px;
+    font-size: 30px;
+}
+
+.rating label:before {
+    content: '★';
+    margin-left: 3px;
+    color: #FFD700;
+}
+
+.rating input:checked ~ label:before {
+    color: #FFED85;
+}
+
+.feedback-form,
+.connect-us-section {
+    width: calc(50% - 20px);
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Add some top margin */
+}
+
+.feedback-form{
+    align-items: center;
+}
+
+.connect-us-section a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.connect-us-section a:hover {
+    color: blue;
+}
+
+.text-section {
+    margin-bottom: 10px; /* Reduce bottom margin */
+}
