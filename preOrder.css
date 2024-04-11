@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url("http://localhost/Project/images/tex1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0%;
+}
+ 
+
+.food-photo {
+    width: 120px;
+    height: 120px;
+}
+.orders-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Adjust the gap between cards */
+}
+
+.order-item {
+    width: calc(33.33% - 20px); /* Calculate width for 3 cards in a row with gap */
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Adjust margin between rows */
+}
+
+
+
+.food-photo {
+    width: 190px;
+    height: 170px;
+    max-height: 200px; /* Adjust the maximum height of the food photo */
+    object-fit: cover; /* Ensure the photo covers the entire space */
+    border-radius: 10px; /* Add rounded corners to the photo */
+    margin-bottom: 10px; /* Add space below the photo */
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 70px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.navbar {
+    
+    padding: 10px 20px; /* Add padding for space between words */
+    text-align: right; /* Align text to the right */
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-left: 20px; /* Add space between links */
+}
+
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+    padding: 5px 10px; /* Add padding for space around the text */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+.nav-link:hover {
+    color: white; /* Change text color to white on hover */
+    background-color: #333; /* Change background color on hover */
+}
+
+
+.nav-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f9adbf;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: #d57289;
+  }
+  

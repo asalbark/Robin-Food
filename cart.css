@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url("http://localhost/Project/images/tex1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin: 0;
+    text-align: center;
+}
+ 
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ 
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+ 
+.card-content {
+    padding: 15px;
+}
+ 
+.card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+ 
+.card p {
+    margin: 0;
+    color: #666;
+}
+ 
+#orderButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #f0839d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+#orderButton:hover {
+    background-color: #f0839d;
+}
+ 
+.removeButton {
+    background-color: #f9adbf;
+    color: #fff;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+ 
+.removeButton:hover {
+    background-color: #dc899c;
+}
+ 
+ 
+.confirmation {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+ 
+/* Modal content */
+.confirmation-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 6px 20px rgba(0,0,0,0.19); /* Box shadow */
+    text-align: center;
+}
+ 
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+ 
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+ 
+#pageTitle{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+ 
+.navbar {
+    padding: 10px 20px; /* Add padding for space between words */
+    text-align: right; /* Align text to the right */
+    font-size: 17px;
+}
+ 
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+.navbar li {
+    display: inline;
+    margin-left: 20px; /* Add space between links */
+}
+ 
+.nav-link {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Default text color */
+    text-decoration: none; /* Remove default underline */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+ 
+.nav-link:hover {
+    color: white; /* Change text color to white on hover */
+}
+button {
+    padding: 15px 30px;
+    font-size: 12px;
+    background-color: #f0839d;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
